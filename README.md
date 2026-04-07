@@ -16,6 +16,7 @@ Rob Gonzalez
 Orlando Godina
 
 ## Summary
+In this lab, we learned how to divide a clock signal using ripple counters and modulo counters. The ripple counter used T flip-flops to divide the clock by powers of two, while the modulo counter used full adders and D flip-flops to count to a set value and reset. This showed how different designs can achieve clock division in hardware. Overall, the lab helped reinforce how sequential logic and flip-flops work together in real digital systems.
 
 ## Lab Questions
 
