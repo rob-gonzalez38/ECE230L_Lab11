@@ -21,8 +21,10 @@ In this lab, we learned how to divide a clock signal using ripple counters and m
 ## Lab Questions
 
 ### 1 - Why does the Modulo Counter actually divide clocks by 2 * Count?
+The modulo counter is designed to toggle the output each time the desired count is reached, so it takes two full counting sequences to complete one single clock cycle.
 
 ### 2 - Why does the ring counter's output go to all 1s on the first clock cycle?
+The ring counter's output goes to all 1s on the first clock cycle because the flip flops may be negative edge triggered and the clock signal may start with a high to low transition and could trigger multiple stages. Another reason could be that the LED outputs can appear to be solidly on because the transitions are very quick to perceive, yet the signalds are toggling if the input clock is 100MHz.
 
 ### 3 - What width of ring counter would you use to get to an output of ~1KHz?
-
+To get an output of 1KHz, I would use a width of 17 bits of ring counter.
